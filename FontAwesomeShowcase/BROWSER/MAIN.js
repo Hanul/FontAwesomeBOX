@@ -4,10 +4,14 @@ FontAwesomeShowcase.MAIN = METHOD({
 		
 		DIV({
 			style : {
-				padding : 20,
-				fontSize : 100
+				padding : 20
 			},
-			c : FontAwesome.GetIcon('flag')
+			c : FontAwesome.GetIcon({
+				style : {
+					fontSize : 100
+				},
+				key : 'flag'
+			})
 		}).appendTo(BODY);
 	}
 });
